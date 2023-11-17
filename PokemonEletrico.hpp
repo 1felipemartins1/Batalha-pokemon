@@ -3,9 +3,10 @@
 
 #include "Pokemon.hpp"
 
+
 class PokemonEletrico : public Pokemon
 {
-private:
+protected:
     double _potencia_raio;
 
 public:
