@@ -6,7 +6,7 @@
 
 class Pokemon
 {
-private:
+protected:
     std::string _nome;
     std::string _tipo_ataque;
     double _forca_ataque; 
@@ -22,6 +22,7 @@ public:
     virtual double calcular_dano() = 0; 
     void atacar(Pokemon* outro_pokemon);  
     void receber_dano(double valor_dano);
+    std::string getNome(); 
 };
 
 #endif

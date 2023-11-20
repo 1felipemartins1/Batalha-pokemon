@@ -7,9 +7,8 @@
 
 class Treinador
 {
-protected:
+private:
     std::string _nome;
-    std::vector<Pokemon *> _pokemons;
 
 public:
     Treinador(std::string nome);
@@ -18,6 +17,8 @@ public:
     void cadastrar_pokemon_explosivo(std::string nome, std::string tipo_ataque, double forca_ataque, double temperatura_explosao);
     Pokemon *usar_pokemon(int idpk);
     void imprimir_informacoes();
+    std::vector<Pokemon *> _pokemons;
+    std::string getNome() const; // Declaração do método getNome
 };
 
 #endif

@@ -6,7 +6,7 @@
 class PokemonAquatico : public Pokemon
 {
 
-protected:
+private:
     double _litros_jato;
 
 public:

@@ -22,9 +22,12 @@ void Pokemon::imprimir_status()
 
 void Pokemon::imprimir_informacoes()
 {
-    std::cout << "POkemon: " << this->_nome << std::endl
+
+    double damage = this->calcular_dano();
+
+    std::cout << "Pokemon: " << this->_nome << std::endl
               << "Tipo ataque: " << this->_tipo_ataque << std::endl
-              << "Dano: " << this->_forca_ataque << std::endl
+              << "Dano: " << damage << std::endl
               << "Energia: " << this->_energia << std::endl;
 }
 
@@ -51,4 +54,8 @@ void Pokemon::receber_dano(double valor_dano)
         std::cout << this->_nome << " "
                   << "morreu!" << std::endl;
     }
+}
+
+std::string Pokemon::getNome(){
+    return _nome;
 }
